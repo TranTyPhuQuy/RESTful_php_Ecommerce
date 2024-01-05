@@ -1,0 +1,44 @@
+Header set Access-Control-Allow-Origin "*"
+
+#Turn Rewrite Engine On
+RewriteEngine On
+
+#Remove .php extension form users.php
+RewriteRule ^users/?$ users.php [NC,L]
+
+#Remove .php extension form login.php
+RewriteRule ^login/?$ login.php [NC,l]
+
+#Remove .php extension form categories.php
+RewriteRule ^categories/?$ categories.php [NC,l]
+
+#Remove .php extension form featured.php
+RewriteRule ^products/featured/?$ products/featured.php [NC,l]
+
+#Remove .php extension form featured.php
+RewriteRule ^products/getProductsById/?$ products/getProductsById.php [NC,l]
+
+#Remove .php extension form featured.php
+RewriteRule ^categories/addCategory/?$ categories/addCategory.php [NC,l]
+
+#Remove .php extension form featured.php
+RewriteRule ^categories/getCategoriesById/?$ categories/getCategoriesById.php [NC,l]
+
+#Remove .php extension form featured.php
+RewriteRule ^products/getProductsByCateId/?$ products/getProductsByCateId.php [NC,l]
+
+#Remove .php extension form addProduct.php
+RewriteRule ^products/addProduct/?$ products/addProduct.php [NC,l]
+
+#Remove .php extension form deleteCategoryByCateId.php
+RewriteRule ^categories/deleteCategoryByCateId/?$ categories/deleteCategoryByCateId.php [NC,l]
+
+
+#Remove .php extension form deleteProductByProductId.php
+RewriteRule ^products/deleteProductByProductId/?$ products/deleteProductByProductId.php [NC,l]
+
+#Remove .php extension form updateCategory.php
+RewriteRule ^categories/updateCategory/?$ categories/updateCategory.php [NC,l]
+
+#Remove .php extension form updateProduct.php
+RewriteRule ^products/updateProduct/?$ products/updateProduct.php [NC,l]
